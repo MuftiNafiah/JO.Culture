@@ -1,0 +1,289 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+}
+
+hr {
+  color: #000 !important;
+  height: 2px !important;
+  margin: 0 !important;
+}
+
+/***************************** FONT *****************************/
+@font-face {
+  font-family: Poppins;
+  src: url('../font/Poppins-Regular.ttf');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Poppins;
+  width: 100%;
+  word-wrap: break-word;
+  letter-spacing: 1.5px;
+}
+
+.font-small {
+  font-family: Poppins;
+  font-size: 14px;
+  width: 100%;
+  letter-spacing: 1.5px;
+}
+
+.font-large {
+  font-family: Poppins;
+  font-size: 18px;
+  width: 100%;
+  word-wrap: break-word;
+  letter-spacing: 2px;
+}
+
+#caption {
+  font-family: Poppins;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/***************************** SECTION 1 *****************************/
+
+/* navigasi bar */
+nav {
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  border-bottom: 3px solid transparent;
+  transition: 200ms;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+  font-family: Poppins;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+nav .container-fluid {
+  margin: 100px;
+}
+
+/* logo navbar */
+img {
+  display: flex;
+  width: 81px;
+  height: 14px;
+}
+
+/* penataan tata letak menu navbar */
+#section-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#section-center li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#section-right {
+  display: flex;
+  align-items: center;
+}
+
+#section-right li {
+  margin-left: 20px;
+}
+
+/* pengaturan dropdown */
+nav .dropdown-menu {
+  font-family: Poppins;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+nav .dropdown-menu:before {
+  bottom: 100%;
+  left: 10%;
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #fff;
+  border-width: 10px;
+}
+
+nav .dropdown-menu a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav .dropdown-menu a:hover {
+  background-color: #aaaaaa;
+  color: black;
+}
+
+.section-1 .banner {
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/***************************** SECTION 2 *****************************/
+.section-2 {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+p, li{
+    font-family: Poppins;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.section-2 h2 {
+    font-family: Poppins;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.section-2 h6{
+    font-family: Poppins;
+    text-align: justify;
+    font-weight: bold;
+}
+
+#kontak-kami h2 {
+    text-align: center;
+    font-family: Poppins;
+    margin-bottom: 50px;
+}
+
+.mb-3 {
+    font-family: Poppins;
+}
+
+.mb-3 .form-control {
+    width: 600px;
+    height: 50px;
+}
+
+.mb-3 #exampleFormControlTextarea1 {
+    height: 100px;
+}
+
+.w3-container .w3-button{
+  width: 300px;
+  height: 40px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background-color: #8c0e16;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+/***************************** FOOTER *****************************/
+
+#footer {
+  margin-top: 150px;
+  background: #eee;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+}
+
+#footer .footer-newsletter {
+  padding: 20px 0;
+  background: #cfa11c;
+  margin: 0 auto;
+}
+
+#footer .footer-newsletter h4 {
+  font-weight: bold;
+}
+
+#footer .footer-newsletter .row {
+  font-family: Poppins;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer .footer-newsletter form {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  background: #fff;
+  color: #aaa;
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-left: 0;
+}
+
+#footer .footer-newsletter input[type='email'] {
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+#footer .footer-newsletter button {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  background: #8c0e16;
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+}
+
+#footer .footer-newsletter button:hover {
+  background: #b00f19;
+}
+
+#footer .nav-item {
+  margin-left: 30px;
+}
